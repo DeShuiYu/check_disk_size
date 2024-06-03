@@ -1,0 +1,17 @@
+[package]
+name = "check_memory"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+walkdir = "2.5.0"
+humansize="2.1.3"
+prettytable-rs = "0.10.0"
+clap = {version = "4.5.4",features = ["derive"]}
+lettre = "0.11.7"
+native-tls = "0.2.12"
+chrono="0.4.38"
+
+[[bin]]
+name = "check_disk_size"
+path = "src/main.rs"
